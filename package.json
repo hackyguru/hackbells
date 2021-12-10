@@ -6,9 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fontsource/montserrat": "^4.5.1",
+    "@fontsource/poppins": "^4.5.0",
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-fast-marquee": "^1.2.1",
+    "react-moralis": "^0.3.1",
+    "react-text-loop": "^2.3.0",
+    "react-toastify": "^8.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
