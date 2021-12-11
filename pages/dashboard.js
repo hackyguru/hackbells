@@ -12,6 +12,7 @@ import Home from "../components/UserDashboard/Home";
 import Actions from "../components/UserDashboard/Actions";
 import Profile from "../components/UserDashboard/Profile";
 import Wallet from "../components/UserDashboard/Wallet";
+import MyRoom from "../components/UserDashboard/MyRoom";
 
 class Dashboard extends Component {
   constructor(props) {
@@ -23,12 +24,12 @@ class Dashboard extends Component {
     moduletypes: [
       {
         id: 1,
-        type: "Home",
+        type: "Reservation",
         icon: faHome,
       },
       {
         id: 2,
-        type: "Room actions",
+        type: "My room",
         icon: faBars,
       },
       {
@@ -86,10 +87,10 @@ class Dashboard extends Component {
                 style={{ fontFamily: "Poppins" }}
                 className="hidden md:block text-right mr-3  container mt-3 md:rounded-tl-2xl text-primary md:ml-60 "
               >
-                Hi, Guru!
+                Hi, Bhuvi!
                 <img
                   class="ml-5 inline object-cover w-8 h-8 rounded-full"
-                  src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"
                   alt="Profile image"
                 />
               </div>
@@ -114,15 +115,16 @@ class Dashboard extends Component {
                 style={{ fontFamily: "Poppins" }}
                 className="hidden md:block text-right mr-3  container mt-3 md:rounded-tl-2xl text-primary md:ml-60 "
               >
-                Hi, Guru!
+                Hi, Bhuvi!
                 <img
                   class="ml-5 inline object-cover w-8 h-8 rounded-full"
-                  src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"
                   alt="Profile image"
                 />
               </div>
               <div class="md:ml-60">
-                <Actions />
+                {/* <Actions /> */}
+                <MyRoom />
               </div>
             </div>
           </div>
@@ -142,14 +144,14 @@ class Dashboard extends Component {
                 style={{ fontFamily: "Poppins" }}
                 className="hidden md:block text-right mr-3  container mt-3 md:rounded-tl-2xl text-primary md:ml-60 "
               >
-                Hi, Guru!
+                Hi, Bhuvi!
                 <img
                   class="ml-5 inline object-cover w-8 h-8 rounded-full"
-                  src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"
                   alt="Profile image"
                 />
               </div>
-              <div class="md:ml-60">
+              <div class="md:ml-60 w-full">
                 <Bookings />
               </div>
             </div>
@@ -170,10 +172,10 @@ class Dashboard extends Component {
                 style={{ fontFamily: "Poppins" }}
                 className="hidden md:block text-right mr-3  container mt-3 md:rounded-tl-2xl text-primary md:ml-60 "
               >
-                Hi, Guru!
+                Hi, Bhuvi!
                 <img
                   class="ml-5 inline object-cover w-8 h-8 rounded-full"
-                  src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"
                   alt="Profile image"
                 />
               </div>
@@ -197,10 +199,10 @@ class Dashboard extends Component {
                 style={{ fontFamily: "Poppins" }}
                 className="hidden md:block text-right mr-3  container mt-3 md:rounded-tl-2xl text-primary md:ml-60 "
               >
-                Hi, Guru!
+                Hi, Bhuvi!
                 <img
                   class="ml-5 inline object-cover w-8 h-8 rounded-full"
-                  src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"
                   alt="Profile image"
                 />
               </div>
