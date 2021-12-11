@@ -121,6 +121,7 @@ export default function Availablity(props) {
                 />
               </div>
               <a
+                href="/kyc"
                 class=" px-5 py-3 ml-3 font-medium text-white bg-primary rounded-lg "
                 style={{ fontFamily: "Poppins" }}
               >

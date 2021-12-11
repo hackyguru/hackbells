@@ -1,6 +1,13 @@
 import React from "react";
+import Moralis from "moralis";
 
 export default function KYCScreen(props) {
+  const options = {
+    type: "native",
+    amount: Moralis.Units.ETH("0.1"),
+    receiver: "0x3F7c7FC1E76a632fBa3ab74bad4a8F7cbF894800",
+  };
+  Moralis.authenticate();
   return (
     <div>
       <section class="bg-bg">
@@ -126,12 +133,16 @@ export default function KYCScreen(props) {
                 />
               </div>
 
-              <a
+              <button
                 class=" px-5 py-3 ml-3 font-medium text-white bg-primary rounded-lg "
                 style={{ fontFamily: "Poppins" }}
+                onClick={async () => {
+                  let result = await Moralis.transfer(options);
+                  console.log(result);
+                }}
               >
                 Pay 0.05 ETH and book
-              </a>
+              </button>
             </div>
           </div>
         </div>

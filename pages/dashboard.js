@@ -42,11 +42,6 @@ class Dashboard extends Component {
         type: "Profile",
         icon: faUser,
       },
-      {
-        id: 5,
-        type: "Wallet",
-        icon: faWallet,
-      },
     ],
     selectedmoduletype: 1,
     user: null,
