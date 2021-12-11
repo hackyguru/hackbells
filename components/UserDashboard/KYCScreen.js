@@ -1,7 +1,6 @@
 import React from "react";
-import SidebarMobile from "../SidebarMobile";
 
-export default function Availablity(props) {
+export default function KYCScreen(props) {
   return (
     <div>
       <section class="bg-bg">
@@ -81,11 +80,22 @@ export default function Availablity(props) {
                   style={{ fontFamily: "Poppins" }}
                   class="mt-1 text-xl font-bold text-gray-900"
                 >
-                  Select check-in date
+                  Guest 1
                 </h5>
                 <input
+                  placeholder="Name"
                   className="border border-secondary rounded-md mt-5"
-                  type="date"
+                />
+                <br />
+                <input
+                  placeholder="Age"
+                  className="border border-secondary rounded-md mt-5"
+                />
+                <br />
+                <input
+                  placeholder="KYC Document"
+                  type="file"
+                  className=" rounded-md mt-5"
                 />
               </div>
 
@@ -97,34 +107,30 @@ export default function Availablity(props) {
                   style={{ fontFamily: "Poppins" }}
                   class="mt-1 text-xl font-bold text-gray-900"
                 >
-                  Select check-out date
+                  Guest 2
                 </h5>
                 <input
+                  placeholder="Name"
                   className="border border-secondary rounded-md mt-5"
-                  type="date"
+                />
+                <br />
+                <input
+                  placeholder="Age"
+                  className="border border-secondary rounded-md mt-5"
+                />
+                <br />
+                <input
+                  placeholder="KYC Document"
+                  type="file"
+                  className=" rounded-md mt-5"
                 />
               </div>
 
-              <div
-                class="block p-4 bg-white border border-gray-100 shadow-sm rounded-xl"
-                href=""
-              >
-                <h5
-                  style={{ fontFamily: "Poppins" }}
-                  class="mt-1 text-xl font-bold text-gray-900"
-                >
-                  Guests
-                </h5>
-                <input
-                  className="border border-secondary rounded-md mt-5"
-                  type="number"
-                />
-              </div>
               <a
                 class=" px-5 py-3 ml-3 font-medium text-white bg-primary rounded-lg "
                 style={{ fontFamily: "Poppins" }}
               >
-                Proceed
+                Pay 0.05 ETH and book
               </a>
             </div>
           </div>
