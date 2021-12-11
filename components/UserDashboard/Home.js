@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -63,20 +64,22 @@ export default function Home() {
                   </div>
 
                   <a
-                    href=""
+                    href="/availablity"
                     class="md:ml-16 mt-4 relative inline-flex items-center px-5 py-3 text-white bg-primary rounded-lg group"
                   >
                     <span class="absolute left-0 transition-transform transform -translate-x-full group-hover:translate-x-4">
                       <svg
                         class="w-6 h-6"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                          clip-rule="evenodd"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 5l7 7-7 7M5 5l7 7-7 7"
                         ></path>
                       </svg>
                     </span>
@@ -150,14 +153,16 @@ export default function Home() {
                     <span class="absolute left-0 transition-transform transform -translate-x-full group-hover:translate-x-4">
                       <svg
                         class="w-6 h-6"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                          clip-rule="evenodd"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 5l7 7-7 7M5 5l7 7-7 7"
                         ></path>
                       </svg>
                     </span>
@@ -231,14 +236,16 @@ export default function Home() {
                     <span class="absolute left-0 transition-transform transform -translate-x-full group-hover:translate-x-4">
                       <svg
                         class="w-6 h-6"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                          clip-rule="evenodd"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 5l7 7-7 7M5 5l7 7-7 7"
                         ></path>
                       </svg>
                     </span>
@@ -312,14 +319,16 @@ export default function Home() {
                     <span class="absolute left-0 transition-transform transform -translate-x-full group-hover:translate-x-4">
                       <svg
                         class="w-6 h-6"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                          clip-rule="evenodd"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 5l7 7-7 7M5 5l7 7-7 7"
                         ></path>
                       </svg>
                     </span>

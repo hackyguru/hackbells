@@ -81,7 +81,7 @@ class Dashboard extends Component {
             moduletypes={this.state.moduletypes}
             selectedtype={this.setModuleType}
           />
-          <div className="flex flex-col bg-indblue min-h-full min-w-full">
+          <div className="flex flex-col bg-bg min-h-full min-w-full">
             <div className="flex  flex-wrap">
               <div
                 style={{ fontFamily: "Poppins" }}
@@ -109,7 +109,7 @@ class Dashboard extends Component {
             moduletypes={this.state.moduletypes}
             selectedtype={this.setModuleType}
           />
-          <div className="flex flex-col bg-indblue min-h-full min-w-full">
+          <div className="flex flex-col bg-bg min-h-full min-w-full">
             <div className="flex  flex-wrap">
               <div
                 style={{ fontFamily: "Poppins" }}
@@ -138,7 +138,7 @@ class Dashboard extends Component {
             moduletypes={this.state.moduletypes}
             selectedtype={this.setModuleType}
           />
-          <div className="flex flex-col bg-indblue min-h-full min-w-full">
+          <div className="flex flex-col bg-bg min-h-screen min-w-full">
             <div className="flex  flex-wrap">
               <div
                 style={{ fontFamily: "Poppins" }}
@@ -166,7 +166,7 @@ class Dashboard extends Component {
             moduletypes={this.state.moduletypes}
             selectedtype={this.setModuleType}
           />
-          <div className="flex flex-col bg-indblue min-h-full min-w-full">
+          <div className="flex flex-col bg-bg min-h-screen min-w-full">
             <div className="flex  flex-wrap">
               <div
                 style={{ fontFamily: "Poppins" }}
@@ -193,7 +193,7 @@ class Dashboard extends Component {
             moduletypes={this.state.moduletypes}
             selectedtype={this.setModuleType}
           />
-          <div className="flex flex-col bg-indblue min-h-full min-w-full">
+          <div className="flex flex-col bg-bg min-h-screen min-w-full">
             <div className="flex  flex-wrap">
               <div
                 style={{ fontFamily: "Poppins" }}
