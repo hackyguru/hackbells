@@ -82,7 +82,7 @@ class Dashboard extends Component {
                 style={{ fontFamily: "Poppins" }}
                 className="hidden md:block text-right mr-3  container mt-3 md:rounded-tl-2xl text-primary md:ml-60 "
               >
-                Hi, Bhuvi!
+                Hi, Guru!
                 <img
                   class="ml-5 inline object-cover w-8 h-8 rounded-full"
                   src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"
@@ -110,7 +110,7 @@ class Dashboard extends Component {
                 style={{ fontFamily: "Poppins" }}
                 className="hidden md:block text-right mr-3  container mt-3 md:rounded-tl-2xl text-primary md:ml-60 "
               >
-                Hi, Bhuvi!
+                Hi, Guru!
                 <img
                   class="ml-5 inline object-cover w-8 h-8 rounded-full"
                   src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"
@@ -139,7 +139,7 @@ class Dashboard extends Component {
                 style={{ fontFamily: "Poppins" }}
                 className="hidden md:block text-right mr-3  container mt-3 md:rounded-tl-2xl text-primary md:ml-60 "
               >
-                Hi, Bhuvi!
+                Hi, Guru!
                 <img
                   class="ml-5 inline object-cover w-8 h-8 rounded-full"
                   src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"
@@ -167,7 +167,7 @@ class Dashboard extends Component {
                 style={{ fontFamily: "Poppins" }}
                 className="hidden md:block text-right mr-3  container mt-3 md:rounded-tl-2xl text-primary md:ml-60 "
               >
-                Hi, Bhuvi!
+                Hi, Guru!
                 <img
                   class="ml-5 inline object-cover w-8 h-8 rounded-full"
                   src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"
@@ -194,7 +194,7 @@ class Dashboard extends Component {
                 style={{ fontFamily: "Poppins" }}
                 className="hidden md:block text-right mr-3  container mt-3 md:rounded-tl-2xl text-primary md:ml-60 "
               >
-                Hi, Bhuvi!
+                Hi, Guru!
                 <img
                   class="ml-5 inline object-cover w-8 h-8 rounded-full"
                   src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"

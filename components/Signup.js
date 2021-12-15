@@ -8,24 +8,12 @@ export default function Signup() {
     <div>
       <div class="bg-bg max-h-screen  max-w-screen px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div class="max-w-lg  mx-auto">
-          <h1
-            style={{ fontFamily: "Poppins" }}
-            class="text-2xl font-bold text-center text-primary sm:text-3xl"
-          >
-            Get started today
-          </h1>
-
-          <p class="max-w-md mx-auto mt-4 text-center text-secondary">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-            sunt dolores deleniti inventore quaerat mollitia?
-          </p>
-
           <form
             action=""
             class="p-8 bg-white mt-6 mb-0 space-y-4 rounded-lg shadow-2xl"
           >
             <p class="text-lg font-medium" style={{ fontFamily: "Poppins" }}>
-              Sign up to your account
+              Sign in to your account
             </p>
 
             <div>
@@ -68,20 +56,16 @@ export default function Signup() {
               Connect Metamask and sign in
             </button>
 
-            <button
-              style={{ fontFamily: "Poppins" }}
-              class="block w-full px-5 py-3 text-sm font-medium text-white bg-primary rounded-lg"
-              onClick={() => logout()}
-            >
-              sign out
-            </button>
-
             <p class="text-sm text-center text-gray-500">
               No account?
               <a class="underline" href="">
                 Sign up
               </a>
-              {isAuthenticated && <div>{user.attributes.ethAddress}</div>}
+              {isAuthenticated && (
+                <div>
+                  Connected to : {user.attributes.ethAddress}. Redirecting.
+                </div>
+              )}
             </p>
           </form>
         </div>

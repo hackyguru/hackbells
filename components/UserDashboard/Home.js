@@ -17,7 +17,7 @@ export default function Home() {
             <a class="block overflow-hidden shadow-xl rounded-3xl" href="">
               <img
                 class="object-cover w-full h-64"
-                src="https://www.hyperui.dev/photos/university-3.jpeg"
+                src="https://static01.nyt.com/images/2019/03/24/travel/24trending-shophotels1/24trending-shophotels1-superJumbo.jpg"
                 alt=""
               />
 
@@ -100,7 +100,7 @@ export default function Home() {
             <a class="block  overflow-hidden shadow-xl rounded-3xl" href="">
               <img
                 class="object-cover w-full h-64"
-                src="https://www.hyperui.dev/photos/university-3.jpeg"
+                src="https://media.istockphoto.com/photos/3d-rendering-beautiful-luxury-bedroom-suite-in-hotel-with-tv-picture-id1066999762?k=20&m=1066999762&s=612x612&w=0&h=BitPXyhBFZQHMfpC9ikX_DReVK6Rd28hH9pRoZW8YAs="
                 alt=""
               />
 
@@ -183,7 +183,7 @@ export default function Home() {
             <a class="block overflow-hidden shadow-xl rounded-3xl" href="">
               <img
                 class="object-cover w-full h-64"
-                src="https://www.hyperui.dev/photos/university-3.jpeg"
+                src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1191,w_2121,x_0,y_223/v1555272928/shape/mentalfloss/50569-istock-486178472.jpg?itok=lRVcge0W"
                 alt=""
               />
 
@@ -266,7 +266,7 @@ export default function Home() {
             <a class="block overflow-hidden shadow-xl rounded-3xl" href="">
               <img
                 class="object-cover w-full h-64"
-                src="https://www.hyperui.dev/photos/university-3.jpeg"
+                src="https://media-cdn.tripadvisor.com/media/photo-m/1280/14/53/ea/9e/g-hotel.jpg"
                 alt=""
               />
 

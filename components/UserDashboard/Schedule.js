@@ -52,7 +52,7 @@ export default function Schedule(props) {
                 style={{ fontFamily: "Poppins" }}
                 className="inline-flex mt-10 items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wid0e text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-primary hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
               >
-                <span className="">Regenerate QR</span>
+                <span className="">Schedule Service</span>
               </a>
             </div>
           </div>

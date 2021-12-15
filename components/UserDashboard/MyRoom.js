@@ -49,7 +49,7 @@ export default function MyRoom() {
           <div class="my-2 px-2 w-full overflow-hidden lg:my-4 lg:px-4 lg:w-1/4">
             <a
               class="block p-8 text-primary bg-third  shadow-xl rounded-xl"
-              href=""
+              href="/schedule"
             >
               <svg
                 class="w-6 h-6"
@@ -63,7 +63,7 @@ export default function MyRoom() {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <a>
+              <a href="/schedule">
                 <h3
                   style={{ fontFamily: "Poppins" }}
                   class="mt-3 text-xl font-bold text-primary "

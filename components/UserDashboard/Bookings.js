@@ -48,7 +48,7 @@ export default function Bookings() {
                     11/12/2021
                   </td>
                   <td class="px-4 py-3 text-ms text-xs md:text-ms  border">
-                    0xu4r85875986795679
+                    0x3F7c7FC1E76a632fBa3ab74bad4a8F7cbF894800{" "}
                   </td>
                   <td class="px-4 py-3 text-xs  border">
                     <span class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm">

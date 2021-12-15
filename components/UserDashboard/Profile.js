@@ -17,9 +17,10 @@ export default function Profile() {
           </label>
 
           <div class="relative">
+            Name
             <input
               type="text"
-              class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
+              class="w-full p-4 mt-3 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
               placeholder="Guru"
             />
           </div>
@@ -30,9 +31,10 @@ export default function Profile() {
             Email
           </label>
           <div class="relative">
+            Email
             <input
               type="email"
-              class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
+              class="w-full p-4 pr-12  mt-3 text-sm border-gray-200 rounded-lg shadow-sm"
               placeholder="guru@guru.com"
             />
           </div>
@@ -43,9 +45,10 @@ export default function Profile() {
             Ethereum address
           </label>
           <div class="relative">
+            Ethereum address
             <input
               type="ethAddress"
-              class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
+              class="w-full p-4 pr-12  mt-3 mb-10 text-sm border-gray-200 rounded-lg shadow-sm"
               placeholder="0x3F7c7FC1E76a632fBa3ab74bad4a8F7cbF894800"
             />
           </div>
