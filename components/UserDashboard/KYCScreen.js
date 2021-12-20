@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Moralis from "moralis";
 
 export default function KYCScreen(props) {
@@ -8,6 +8,54 @@ export default function KYCScreen(props) {
     receiver: "0x3F7c7FC1E76a632fBa3ab74bad4a8F7cbF894800",
   };
   Moralis.enableWeb3();
+
+  const [arcanaLoggedIn, setArcanaLoggedIn] = useState(false);
+  const [arcanaPrivate, setArcanaPrivate] = useState(null);
+
+  async function arcanaSignIn() {
+    const AuthProvider = (await import("@arcana/auth")).AuthProvider;
+    const authInstance = new AuthProvider({
+      appID: process.env.NEXT_PUBLIC_ARCANA_APP_ID,
+      network: "testnet",
+      oauthCreds: [
+        {
+          type: "google",
+          clientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
+        },
+      ],
+      redirectUri: `${window.location.origin}/auth/redirect`,
+    });
+
+    authInstance.loginWithSocial("google").then(async () => {
+      if (authInstance.isLoggedIn()) {
+        setArcanaLoggedIn(true);
+
+        console.log(authInstance.getUserInfo())
+
+        const ArcanaStorage = (await import('@arcana/storage/dist/standalone/storage.umd')).Arcana;
+
+        console.log({  appId: process.env.NEXT_PUBLIC_ARCANA_APP_ID,
+          privateKey: arcanaPrivate,
+          email: authInstance.getUserInfo().userInfo.id,})
+
+        window.arcanaStorage = new ArcanaStorage({
+          appId: process.env.NEXT_PUBLIC_ARCANA_APP_ID,
+          privateKey: authInstance.getUserInfo().privateKey,
+          email: authInstance.getUserInfo().userInfo.id,
+        })
+
+        console.log(window.arcanaStorage)
+      }
+    });
+  }
+
+  async function uploadToArcana(e)
+  {
+    const Uploader = await window.arcanaStorage.getUploader();
+    console.log(Uploader)
+    Uploader.upload(e.target.files[0]);
+  }
+
   return (
     <div>
       <section class="bg-bg">
@@ -78,7 +126,18 @@ export default function KYCScreen(props) {
               </div>
             </div>
 
-            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1">
+            {arcanaLoggedIn ? '' :
+              <button
+                  className=" px-5 py-3 ml-3 font-medium text-white bg-primary rounded-lg "
+                  style={{fontFamily: "Poppins"}}
+                  onClick={async () => {
+                    await arcanaSignIn();
+                  }}
+              >
+                Sign in with Arcana
+              </button>
+              }
               <div
                 class="block p-4 bg-white border border-gray-100 shadow-sm rounded-xl"
                 href=""
@@ -103,6 +162,7 @@ export default function KYCScreen(props) {
                   placeholder="KYC Document"
                   type="file"
                   className=" rounded-md mt-5"
+                  onChange={async (e) => await uploadToArcana(e)}
                 />
               </div>
 

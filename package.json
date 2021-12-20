@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@arcana/auth": "^0.0.6",
+    "@arcana/storage": "^0.1.0",
     "@fontsource/montserrat": "^4.5.1",
     "@fontsource/poppins": "^4.5.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
