@@ -15,7 +15,7 @@ export default function Home() {
 
       <Navbar />
       <Availablity
-        title="Suite room"
+        title="Deluxe room"
         description="A business class room with an aesthetic view."
         reviews="0"
       />

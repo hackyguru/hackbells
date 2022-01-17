@@ -37,11 +37,11 @@ class Dashboard extends Component {
         type: "Booking history",
         icon: faHistory,
       },
-      {
-        id: 4,
-        type: "Profile",
-        icon: faUser,
-      },
+      // {
+      //   id: 4,
+      //   type: "Profile",
+      //   icon: faUser,
+      // },
     ],
     selectedmoduletype: 1,
     user: null,
@@ -82,12 +82,12 @@ class Dashboard extends Component {
                 style={{ fontFamily: "Poppins" }}
                 className="hidden md:block text-right mr-3  container mt-3 md:rounded-tl-2xl text-primary md:ml-60 "
               >
-                Hi, Guru!
-                <img
-                  class="ml-5 inline object-cover w-8 h-8 rounded-full"
-                  src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"
-                  alt="Profile image"
-                />
+                {/*Hi, Guru!*/}
+                {/*<img*/}
+                {/*  class="ml-5 inline object-cover w-8 h-8 rounded-full"*/}
+                {/*  src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"*/}
+                {/*  alt="Profile image"*/}
+                {/*/>*/}
               </div>
               <div class="md:ml-60">
                 <Home />

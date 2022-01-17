@@ -19,10 +19,7 @@ class SidebarMobile extends Component {
     return (
       <div class="bg-gradient-to-r from-rose-700 to-pink-600 z-50 static uppercase font-semibold  flex h-16 md:flex-col   justify-around md:h-screen md:w-60 fixed w-screen bottom-0 items-center">
         <img className="hidden h-10 md:block" src="assets/dehotel.png"></img>
-        <br className="hidden md:block" />
-        <br className="hidden md:block" />
-        <br className="hidden md:block" />
-        <br className="hidden md:block" />
+
         {this.props.moduletypes.map((moduletype, selectedtype) => (
           <div
             className={
@@ -44,28 +41,28 @@ class SidebarMobile extends Component {
           </div>
         ))}
         <div className="hidden md:block "></div>
-        <div class="hidden md:flex md:flex-wrap hover:shadow-md p-4 rounded-xl duration-1000 ease-in-out transform hover:scale-125 delay-200  text-3xl font-bold text-primary text-center bg-bg md:p-5 ">
-          <svg
-            class="w-6 h-6 mr-3"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-            ></path>
-          </svg>
-          <span
-            style={{ fontFamily: "Poppins" }}
-            className="hidden md:block text-sm"
-          >
-            Log Out
-          </span>
-        </div>
+        {/*<div class="hidden md:flex md:flex-wrap hover:shadow-md p-4 rounded-xl duration-1000 ease-in-out transform hover:scale-125 delay-200  text-3xl font-bold text-primary text-center bg-bg md:p-5 ">*/}
+        {/*  <svg*/}
+        {/*    class="w-6 h-6 mr-3"*/}
+        {/*    fill="none"*/}
+        {/*    stroke="currentColor"*/}
+        {/*    viewBox="0 0 24 24"*/}
+        {/*    xmlns="http://www.w3.org/2000/svg"*/}
+        {/*  >*/}
+        {/*    <path*/}
+        {/*      stroke-linecap="round"*/}
+        {/*      stroke-linejoin="round"*/}
+        {/*      stroke-width="2"*/}
+        {/*      d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"*/}
+        {/*    ></path>*/}
+        {/*  </svg>*/}
+        {/*  <span*/}
+        {/*    style={{ fontFamily: "Poppins" }}*/}
+        {/*    className="hidden md:block text-sm"*/}
+        {/*  >*/}
+        {/*    Log Out*/}
+        {/*  </span>*/}
+        {/*</div>*/}
       </div>
     );
   }
