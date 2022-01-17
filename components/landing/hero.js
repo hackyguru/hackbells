@@ -24,7 +24,7 @@ export default function hero() {
           </div>
           <div className="flex flex-col items-center md:flex-row">
             <a
-              href="/"
+              href="/dashboard"
               className="inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-gradient-to-r from-rose-700 to-pink-600"
             >
               <span style={{ fontFamily: "Poppins" }} className="">

@@ -18,28 +18,28 @@ export const Navbar = () => {
           >
             <img className="h-16" src="assets/dehotel.png"></img>
           </a>
-          <ul className="flex items-center hidden space-x-8 lg:flex">
-            <li>
-              <a
-                href="/signin"
-                aria-label="Our product"
-                title="Our product"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Sign in
-              </a>
-            </li>
-            <li>
-              <a
-                href="/signup"
-                aria-label="Our product"
-                title="Our product"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Sign up
-              </a>
-            </li>
-          </ul>
+          {/*<ul className="flex items-center hidden space-x-8 lg:flex">*/}
+          {/*  <li>*/}
+          {/*    <a*/}
+          {/*      href="/signin"*/}
+          {/*      aria-label="Our product"*/}
+          {/*      title="Our product"*/}
+          {/*      className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"*/}
+          {/*    >*/}
+          {/*      Sign in*/}
+          {/*    </a>*/}
+          {/*  </li>*/}
+          {/*  <li>*/}
+          {/*    <a*/}
+          {/*      href="/signup"*/}
+          {/*      aria-label="Our product"*/}
+          {/*      title="Our product"*/}
+          {/*      className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"*/}
+          {/*    >*/}
+          {/*      Sign up*/}
+          {/*    </a>*/}
+          {/*  </li>*/}
+          {/*</ul>*/}
           <div className="lg:hidden">
             <button
               aria-label="Open Menu"

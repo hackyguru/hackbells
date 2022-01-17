@@ -147,7 +147,7 @@ export default function Home() {
                   </div>
 
                   <a
-                    href=""
+                    href="/availablity"
                     class="md:ml-16 mt-4 relative inline-flex items-center px-5 py-3 text-white bg-primary rounded-lg group"
                   >
                     <span class="absolute left-0 transition-transform transform -translate-x-full group-hover:translate-x-4">

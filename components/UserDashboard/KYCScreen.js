@@ -1,13 +1,13 @@
 import React, {useEffect, useRef, useState} from "react";
-import Moralis from "moralis";
+// import Moralis from "moralis";
 
 export default function KYCScreen(props) {
-  const options = {
-    type: "native",
-    amount: Moralis.Units.ETH("0.1"),
-    receiver: "0x3F7c7FC1E76a632fBa3ab74bad4a8F7cbF894800",
-  };
-  Moralis.enableWeb3();
+  // const options = {
+  //   type: "native",
+  //   amount: Moralis.Units.ETH("0.1"),
+  //   receiver: "0x3F7c7FC1E76a632fBa3ab74bad4a8F7cbF894800",
+  // };
+  // Moralis.enableWeb3();
 
   const [arcanaLoggedIn, setArcanaLoggedIn] = useState(false);
   const [arcanaPrivate, setArcanaPrivate] = useState(null);
@@ -15,12 +15,12 @@ export default function KYCScreen(props) {
   async function arcanaSignIn() {
     const AuthProvider = (await import("@arcana/auth")).AuthProvider;
     const authInstance = new AuthProvider({
-      appID: process.env.NEXT_PUBLIC_ARCANA_APP_ID,
+      appID: "264",
       network: "testnet",
       oauthCreds: [
         {
           type: "google",
-          clientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
+          clientId: "907078021684-4v2lrqhvi0kdp5c3nkhb3kjca617ufnm.apps.googleusercontent.com",
         },
       ],
       redirectUri: `${window.location.origin}/auth/redirect`,
@@ -44,7 +44,6 @@ export default function KYCScreen(props) {
           email: authInstance.getUserInfo().userInfo.id,
         })
 
-        console.log(window.arcanaStorage)
       }
     });
   }
@@ -52,8 +51,8 @@ export default function KYCScreen(props) {
   async function uploadToArcana(e)
   {
     const Uploader = await window.arcanaStorage.getUploader();
-    console.log(Uploader)
     Uploader.upload(e.target.files[0]);
+    alert('KYC Document uploaded to Arcana Storage successfully');
   }
 
   return (
@@ -166,39 +165,39 @@ export default function KYCScreen(props) {
                 />
               </div>
 
-              <div
-                class="block p-4 bg-white border border-gray-100 shadow-sm rounded-xl"
-                href=""
-              >
-                <h5
-                  style={{ fontFamily: "Poppins" }}
-                  class="mt-1 text-xl font-bold text-gray-900"
-                >
-                  Guest 2
-                </h5>
-                <input
-                  placeholder="Name"
-                  className="border border-secondary rounded-md mt-5"
-                />
-                <br />
-                <input
-                  placeholder="Age"
-                  className="border border-secondary rounded-md mt-5"
-                />
-                <br />
-                <input
-                  placeholder="KYC Document"
-                  type="file"
-                  className=" rounded-md mt-5"
-                />
-              </div>
+              {/*<div*/}
+              {/*  class="block p-4 bg-white border border-gray-100 shadow-sm rounded-xl"*/}
+              {/*  href=""*/}
+              {/*>*/}
+              {/*  <h5*/}
+              {/*    style={{ fontFamily: "Poppins" }}*/}
+              {/*    class="mt-1 text-xl font-bold text-gray-900"*/}
+              {/*  >*/}
+              {/*    Guest 2*/}
+              {/*  </h5>*/}
+              {/*  <input*/}
+              {/*    placeholder="Name"*/}
+              {/*    className="border border-secondary rounded-md mt-5"*/}
+              {/*  />*/}
+              {/*  <br />*/}
+              {/*  <input*/}
+              {/*    placeholder="Age"*/}
+              {/*    className="border border-secondary rounded-md mt-5"*/}
+              {/*  />*/}
+              {/*  <br />*/}
+              {/*  <input*/}
+              {/*    placeholder="KYC Document"*/}
+              {/*    type="file"*/}
+              {/*    className=" rounded-md mt-5"*/}
+              {/*  />*/}
+              {/*</div>*/}
 
               <button
                 class=" px-5 py-3 ml-3 font-medium text-white bg-primary rounded-lg "
                 style={{ fontFamily: "Poppins" }}
                 onClick={async () => {
-                  let result = await Moralis.transfer(options);
-                  console.log(result);
+                  // let result = await Moralis.transfer(options);
+                  // console.log(result);
                 }}
               >
                 Pay 0.05 ETH and book
