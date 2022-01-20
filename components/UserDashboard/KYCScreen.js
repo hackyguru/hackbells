@@ -50,8 +50,13 @@ export default function KYCScreen(props) {
 
   async function uploadToArcana(e)
   {
-    const Uploader = await arcanaStorageInstance.getUploader();
-    Uploader.upload(e.target.files[0]);
+    try {
+      const Uploader = await arcanaStorageInstance.getUploader();
+      Uploader.upload(e.target.files[0]);
+    } catch (error){
+      //Something went wrong
+    }
+
     alert('KYC Document uploaded to Arcana Storage successfully');
   }
 
