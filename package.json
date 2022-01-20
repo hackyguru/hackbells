@@ -14,6 +14,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@material-tailwind/react": "0.3.4",
+    "buffer": "^6.0.3",
     "ipfs-http-client": "^54.0.2",
     "moralis": "0.0.154",
     "next": "latest",
