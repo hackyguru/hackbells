@@ -34,16 +34,15 @@ export default function KYCScreen(props) {
 
         const ArcanaStorage = (await import('@arcana/storage/dist/standalone/storage.umd')).Arcana;
 
-        console.log({  appId: process.env.NEXT_PUBLIC_ARCANA_APP_ID,
-          privateKey: arcanaPrivate,
+        console.log({  appId: "264",
+          privateKey: authInstance.getUserInfo().privateKey,
           email: authInstance.getUserInfo().userInfo.id,})
 
         window.arcanaStorage = new ArcanaStorage({
-          appId: process.env.NEXT_PUBLIC_ARCANA_APP_ID,
+          appId: "264",
           privateKey: authInstance.getUserInfo().privateKey,
           email: authInstance.getUserInfo().userInfo.id,
         })
-
       }
     });
   }
