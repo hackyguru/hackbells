@@ -11,6 +11,7 @@ export default function KYCScreen(props) {
 
   const [arcanaLoggedIn, setArcanaLoggedIn] = useState(false);
   const [arcanaPrivate, setArcanaPrivate] = useState(null);
+  const [arcanaStorageInstance, setArcanaStorageInstance] = useState(null);
 
   async function arcanaSignIn() {
     const AuthProvider = (await import("@arcana/auth")).AuthProvider;
@@ -38,18 +39,18 @@ export default function KYCScreen(props) {
           privateKey: authInstance.getUserInfo().privateKey,
           email: authInstance.getUserInfo().userInfo.id,})
 
-        window.arcanaStorage = new ArcanaStorage({
+        setArcanaStorageInstance(new ArcanaStorage({
           appId: "264",
           privateKey: authInstance.getUserInfo().privateKey,
           email: authInstance.getUserInfo().userInfo.id,
-        })
+        }));
       }
     });
   }
 
   async function uploadToArcana(e)
   {
-    const Uploader = await window.arcanaStorage.getUploader();
+    const Uploader = await arcanaStorageInstance.getUploader();
     Uploader.upload(e.target.files[0]);
     alert('KYC Document uploaded to Arcana Storage successfully');
   }
